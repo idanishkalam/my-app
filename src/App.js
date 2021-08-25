@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import { useState } from "react";
 import './App.css';
+import SignIn from './login';
+import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import 'react-pro-sidebar/dist/css/styles.css';
+import { GrDashboard } from 'react-icons/gr';
+import Sidebar from "./components/sidebar/sidebar";
+
+import Main from "./components/main/main";
 
 function App() {
+  const [sidebarOpen, setsidebarOpen] = useState(false);
+  const openSidebar = () => {
+    setsidebarOpen(true);
+  };
+  const closeSidebar = () => {
+    setsidebarOpen(false);
+  };
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="container">
+    
+    <Main />
+    <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
+  </div>
   );
 }
 
