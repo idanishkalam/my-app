@@ -21,20 +21,24 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
           id="sidebarIcon"
           aria-hidden="true"
         ></i>
-          <a href="#">Dashboard</a>
+          <a href="/">Dashboard</a>
         </div>
         <h2>Loco</h2>
         <div className="sidebar__link">
           <i className="fa fa-user-secret" aria-hidden="true"></i>
-          <a href="#">Form 1</a>
+          <a href="/form1">PRELIMINARY-WORK</a>
         </div>
         <div className="sidebar__link">
           <i className="fa fa-building-o"></i>
-          <a href="#">Form 2</a>
+          <a href="/form2">WORK-PROGRESS</a>
         </div>
         <div className="sidebar__link">
           <i className="fa fa-wrench"></i>
-          <a href="#">form 3</a>
+          <a href="/form3">ISOLATION</a>
+        </div>
+        <div className="sidebar__link">
+          <i className="fa fa-wrench"></i>
+          <a href="/form4">OHE NORMALIZATION</a>
         </div>
         <div className="sidebar__link">
           <i className="fa fa-wrench"></i>

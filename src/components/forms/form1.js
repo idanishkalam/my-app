@@ -5,7 +5,7 @@ function form1() {
 
 
     return (
-      <div className="App">
+      <div className="App" >
         <Typography gutterBottom variant="h3" align="center">
           PRELIMINARY-WORK
         </Typography>
